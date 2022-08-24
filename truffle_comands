@@ -1,0 +1,5 @@
+truffle run verify PayRueERC721@{0x6F9a579aa3f56efbf178D648B15b5c97E21EA97b} --network okc
+
+truffle-flattener ./contracts/PayRueERC721.sol > PayRueERC721Flattened.sol
+truffle-flattener ./node_modules/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol > ProxyAdminFlattened.sol
+truffle-flattener ./node_modules/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol > TransparentUpgradeableProxyFlattened.sol
